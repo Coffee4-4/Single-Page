@@ -1,0 +1,132 @@
+header{
+    background: lightgreen;
+    padding: 10px 0;
+}
+
+header .logo{
+    font-size: 23px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+.logo  i {
+    padding: 0 10px;
+}
+.mobile{
+    display: none;
+}
+
+
+nav.desktop ul{
+    list-style-type: none;
+    position: relative;
+
+}
+
+nav.desktop li{
+    font-size: 18px;
+    font-weight: 300;
+    padding: 0 30px;
+    text-transform: capitalize;
+    display: inline-block;
+
+}
+nav.desktop a{
+    text-decoration: none;
+    color: white;
+}
+
+
+footer {
+    background: lightgreen;
+    padding: 5px 0;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+footer.fixed {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+
+section.erro-404 h2 {
+    color: #444;
+    font-weight: 400;
+    text-align: center;
+    padding: 5px;
+    border-bottom: 1px solid #444444;
+    font-size: 28px;
+
+}
+
+section.erro-404 p {
+    text-align: center;
+    font-size: 16px;
+    color: #444;
+    font-weight: 300;
+    margin-top: 8px;
+}
+
+section.erro-404 a {
+    color: #444;
+}
+section.erro-404 i {
+    margin: 0 10px;
+    font-size: 36px;
+}
+
+.wraper-404 {
+    position: absolute;
+    width: 100%;
+    padding: 0 20%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+@media screen and (max-width: 700px){
+    nav.mobile ul {
+        z-index: 3;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        top: 55px;
+        display: none;
+        text-align: center;
+    }
+
+    nav.mobile li {
+        font-weight: 300;
+        width: 100%;
+        font-size: 17px;
+        display: block;
+        background: #fefefe;
+        border-bottom: 1px solid #ccc;
+        padding: 8px 0;
+    }
+
+    nav.mobile a {
+        color: #444;
+        text-decoration: none;
+        display: block;
+    }
+
+    .botao-menu-mobile {
+        font-size: 24px;
+        cursor: pointer;
+        color: white;
+    }
+
+}
