@@ -67,8 +67,24 @@ if(isset($page404) && $page404== true) echo 'class="fixed"'
 ?>
 >
     <div class="center">
+        <div class="w33 left footer-contato">
+            <p>André L. Melicio</p>
+            <p>(14) 99143 - 9320</p>
+            <p>nybble94@gmail.com</p>
+        </div>
+        
+        <div class="w33 left footer-cp">
         <p>Feito com <i class="fas fa-heart"></i> && <i class="fas fa-coffee"></i></p>
-        <p><i class="fas fa-code"></i> Living Tech</p>
+        <p><i class="fas fa-code"></i> Living Tech</p>    
+        </div>
+        
+        <div class="w33 left footer-md">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fas fa-blog"></i></a>
+            <a href="#"><i class="fab fa-github-alt"></i></a>
+
+        </div>
+        <div class="clear"></div>
     </div>
 </footer>
 
