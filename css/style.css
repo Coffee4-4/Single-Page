@@ -120,8 +120,63 @@ section.erro-404 i {
 
 
 
+/*SLIDER TESTE ALTERAR */
+section.container-slider {
+    width: 100%;
+    height: 600px;
+    /*background-image: url('../img/bg-form.jpeg');
+    !* BG cubre toda a tela  *!
+    background-size: cover;*/
+    position: relative;
+
+}
+.slider-single{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.7);
+    z-index: 2; /*vem primeiro que o form*/
+
+}
+.bullets{
+    position: absolute;
+    z-index: 5;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.bullets span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #444;
+}
+.bullets span.active-slider{
+    background: white;
+}
 
 
+/*MAPA*/
+#map{
+    width: 100%;
+    height: 400px;
+}
 
 
 

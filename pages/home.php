@@ -1,7 +1,7 @@
 <section class="container-slider">
-    <div style="background-image: url('<?php echo INCLUDE_PATH ?>img/')" class="slider-single"></div><!--slider-single-->
-    <div style="background-image: url('<?php echo INCLUDE_PATH ?>img/')" class="slider-single"></div><!--slider-single-->
-    <div style="background-image: url('<?php echo INCLUDE_PATH ?>img/')" class="slider-single"></div><!--slider-single-->
+    <div style="background-image: url('<?php echo INCLUDE_PATH ?>img/banner-01.jpg')" class="slider-single"></div><!--slider-single-->
+    <div style="background-image: url('<?php echo INCLUDE_PATH ?>img/banner-02.jpg')" class="slider-single"></div><!--slider-single-->
+    <div style="background-image: url('<?php echo INCLUDE_PATH ?>img/banner-03.jpg')" class="slider-single"></div><!--slider-single-->
     <div class="overlay"></div> <!-- overlay -->
     <div class="bullets"></div>
 <div class="clear"></div>
