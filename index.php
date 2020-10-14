@@ -19,6 +19,22 @@
     <title>Living Tech</title>
 </head>
 <body>
+<raiz raiz = "<?php echo INCLUDE_PATH;?>"/>
+<?php
+$url = isset($_GET['url']) ? $_GET['url'] : 'home';
+switch ($url) {
+    case 'sobre':
+        echo '<scrol scrolValor="sobre" />';
+        break;
+    case 'projetos':
+        echo '<scrol scrolValor="projetos" />';
+        break;
+}
+
+?>
+
+
+
 <header>
     <div class="center">
         <div class="logo left"><a href="/"><i class="fas fa-terminal"></i>Living Tech</a></div>
@@ -26,9 +42,9 @@
         <nav class="desktop right">
             <ul>
                 <li><a href="<?php echo INCLUDE_PATH;?>">Home</a></li>
-                <li><a href="<?php echo INCLUDE_PATH;?>sobre">Sobre</a></li>
-                <li><a href="<?php echo INCLUDE_PATH;?>servicos">Serviços</a></li>
-                <li><a href="<?php echo INCLUDE_PATH;?>contato">Contato</a></li>
+                <li><a realtime="sobre" href="<?php echo INCLUDE_PATH;?>sobre">Sobre</a></li>
+                <li><a href="<?php echo INCLUDE_PATH;?>projetos">Projetos</a></li>
+                <li><a realtime="contato" href="<?php echo INCLUDE_PATH;?>contato">Contato</a></li>
             </ul>
         </nav>
 
@@ -38,15 +54,16 @@
             </div>
             <ul>
                 <li><a href="<?php echo INCLUDE_PATH;?>">Home</a></li>
-                <li><a href="<?php echo INCLUDE_PATH;?>sobre">Sobre</a></li>
-                <li><a href="<?php echo INCLUDE_PATH;?>servicos">Serviços</a></li>
-                <li><a href="<?php echo INCLUDE_PATH;?>contato">Contato</a></li>
+                <li><a realtime="sobre" href="<?php echo INCLUDE_PATH;?>sobre">Sobre</a></li>
+                <li><a href="<?php echo INCLUDE_PATH;?>projetos">Projetos</a></li>
+                <li><a realtime="contato" href="<?php echo INCLUDE_PATH;?>contato">Contato</a></li>
             </ul>
         </nav>
         <div class="clear"></div>
 
     </div>
 </header>
+<div class="container-conteudo">
 
 <?php
 $url = isset($_GET['url'])?$_GET['url']:'home';
@@ -54,12 +71,17 @@ $url = isset($_GET['url'])?$_GET['url']:'home';
 if (file_exists('pages/'.$url.'.php')){
     include ('pages/'.$url.'.php');
 }else{
-    $page404 = true;
-    include('pages/404.php');
-}
+    if ($url != 'sobre' && $url != 'projetos'){
+        $page404 = true;
+        include('pages/404.php');
+    }else{
+        include('pages/home.php');
+    }
 
+}
 ?>
 
+</div> <!--container-conteudo-->
 
 <footer
 <?php
@@ -68,9 +90,7 @@ if(isset($page404) && $page404== true) echo 'class="fixed"'
 >
     <div class="center">
         <div class="w33 left footer-contato">
-            <p>André L. Melicio</p>
-            <p>(14) 99143 - 9320</p>
-            <p>nybble94@gmail.com</p>
+           <p></p>
         </div>
         
         <div class="w33 left footer-cp">
@@ -90,6 +110,8 @@ if(isset($page404) && $page404== true) echo 'class="fixed"'
 
 <script src="<?php echo INCLUDE_PATH; ?>js/jquery.js"></script>
 <script src="<?php echo INCLUDE_PATH; ?>js/scripts.js"></script>
+<script src="<?php echo INCLUDE_PATH; ?>js/constants.js"></script>
+
 
 </body>
 </html>
