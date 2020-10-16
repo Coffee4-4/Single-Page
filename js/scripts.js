@@ -60,8 +60,18 @@ $(function () {
                 $('.container-conteudo').hide();
                 $('.container-conteudo').load(include_path + 'pages/' + pagina +'.php');
 
+
+                setTimeout(function(){
+
+                    initMap();
+
+                },1000);
+
+
                 $('.container-conteudo').fadeIn(1000);
                 return false;
+
+
 
             }
 

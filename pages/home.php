@@ -5,6 +5,15 @@
     <div class="overlay"></div> <!-- overlay -->
     <div class="bullets"></div>
 <div class="clear"></div>
+
+<div class="center box-cadastro">
+        <form>
+            <h2>Cadastre seu e-mail e receba nossas novidades!</h2>
+            <input type="email" name="email" required>
+            <input type="submit" name="acao" value="Cadastrar!">
+        </form>
+</div>
+
 </section>
 
 
