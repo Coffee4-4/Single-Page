@@ -53,11 +53,16 @@ input{
     }
     .w50{
         padding: 20px;
-        width: 100%;
+        width: 100% !important;
     }
     .w33{
         width: 100% !important;
         padding: 20px;
+    }
+    .container-autor-img{
+        padding: 20px!important;
+        width: 100% !important;
+        margin: 0 !important;
     }
 }
 

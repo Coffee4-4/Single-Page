@@ -26,24 +26,24 @@
     <div class="center">
         <h2 class="title">Projetos</h2>
         <div class="w33 left box-projetos">
-            <h3><img src="#" alt=""></h3>
-            <h4>Titulo</h4>
+            <div class="box-projetos-img"><img src="<?php echo INCLUDE_PATH?>img/barbados.jpg" alt=""></div>
+            <h4>Barbados |Barber Shop</h4>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
             </p>
         </div>
         <div class="w33 left box-projetos">
-            <h3><img src="#" alt=""></h3>
-            <h4>Titulo</h4>
+            <div class="box-projetos-img"><img src="<?php echo INCLUDE_PATH?>img/8bits.jpg" alt=""></div>
+            <h4>8-Bits |Store</h4>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
             </p>
         </div>
         <div class="w33 left box-projetos">
-            <h3><img src="#" alt=""></h3>
-            <h4>Titulo</h4>
+            <div class="box-projetos-img"><img src="<?php echo INCLUDE_PATH?>img/asc.png" alt=""></div>
+            <h4>Trovãozinho Studios</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
 
@@ -73,15 +73,19 @@
 
         </div>
     </div> <!--center-->
-    <div class="w50 right box-img_autor">
+    <div class="w50 right container-autor-img">
+        <div class="box-img_autor">
         <img src="<?php echo INCLUDE_PATH;?>img/autor.jpeg" alt="">
-        <h2>André L. Melicio</h2>
+        </div>
+        <div class="box-sobre-autor">
+            <h2>André L. Melicio</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
             ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
             fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
             deserunt mollit anim id est laborum.
         </p>
+        </div>
     </div><!--box-img_autor-->
 
     <div class="clear"></div>

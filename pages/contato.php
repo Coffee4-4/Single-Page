@@ -1,5 +1,6 @@
 <div class="container-contato">
 	<div class="center">
+        <h3 class="title-contato">Contato</h3>
 		<form>
             <input type="text"name="nome" placeholder="Digite aqui seu nome ...">
             <div></div>
