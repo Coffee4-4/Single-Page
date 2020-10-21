@@ -123,10 +123,7 @@ section.erro-404 i {
 /*SLIDER TESTE ALTERAR */
 section.container-slider {
     width: 100%;
-    height: 600px;
-    /*background-image: url('../img/bg-form.jpeg');
-    !* BG cubre toda a tela  *!
-    background-size: cover;*/
+    height: 520px;
     position: relative;
 
 }
@@ -147,13 +144,13 @@ section.container-slider {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(51, 51, 51, 0.7);
-    z-index: 2; /*vem primeiro que o form*/
+    background-color: rgba(51, 51, 51, 0.6);
+    z-index: 2;
 
 }
 .bullets{
     position: absolute;
-    z-index: 5;
+    z-index: 4;
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
@@ -170,8 +167,104 @@ section.container-slider {
 .bullets span.active-slider{
     background: white;
 }
+.box-cadastro form{
+    width: 93%;
+    max-width: 450px;
+    z-index: 3;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.box-cadastro form h2 {
+    color: white;
+    font-weight: 300;
+    font-size: 32px;
+    text-align: center;
+}
 
+.box-cadastro form input[type=email] {
+    width: 80%;
+    height: 55px;
+    display: block;
+    margin: 10px auto;
+    background: white;
+    color: #333;
+    font-size: 22px;
+    padding-left: 10px;
+    border: 0;
+}
 
+.box-cadastro form input[type=submit] {
+    width: 80%;
+    height: 55px;
+    display: block;
+    margin: 0 auto;
+    background: #00c59e;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    border: 0;
+}
+/*Projetos*/
+.title{
+    font-weight: 400;
+    font-size: 38px;
+    margin-left: 40px;
+    border-bottom: 1px solid #555;
+    margin-bottom: 20px;
+
+}
+section.container-projetos{
+    background: #e2e2e2;
+    margin: 40px 0;
+    padding-bottom: 15px;
+}
+
+section.container-projetos h4{
+    text-align: center;
+    font-weight: 300;
+    font-size: 22px;
+}
+section.container-projetos p{
+    text-align: justify;
+    font-size: 16px;
+    padding: 5%;
+}
+section.container-projetos .w33 {
+    width: 32.3%;
+    border-radius: 8px;
+
+}
+section.container-projetos .box-projetos{
+    background: #fefefe;
+    margin: .5%;
+}
+
+/*SOBRE*/
+
+.container-autor .box-especialidades{
+    width: 100%;
+    padding: 2%;
+}
+
+section.container-autor h3{
+    font-size: 48px;
+    color: #00c59e;
+    display: inline-block;
+    width: 25%;
+    margin: 1px;
+
+}
+section.container-autor p{
+    font-weight: 300;
+    text-align: justify;
+    display: inline-block;
+    margin-left: 10px;
+    width: 74%;
+
+}
 /*MAPA*/
 #map{
     width: 100%;
