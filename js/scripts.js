@@ -49,6 +49,7 @@ $(function () {
         var divScroll = $(elemento).offset().top;
 
         $('html,body').animate({'scrollTop': divScroll}, 1500);
+        return false;
     }
 
 /*---------------------Carregamento  Dinamico ------------------------------*/
