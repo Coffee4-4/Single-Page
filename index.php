@@ -33,7 +33,10 @@ switch ($url) {
 
 ?>
 
-
+<div class="sucesso">Formulário enviado com sucesso!</div>
+<div class="overlay-loading">
+    <img src="<?php echo INCLUDE_PATH;?>img/ajax-loader.gif" alt="loader">
+</div>
 
 <header>
     <div class="center">
@@ -114,6 +117,7 @@ if(isset($page404) && $page404== true) echo 'class="fixed"'
 <script src="<?php echo INCLUDE_PATH; ?>js/jquery.js"></script>
 <script src="<?php echo INCLUDE_PATH; ?>js/constants.js"></script>
 <script src="<?php echo INCLUDE_PATH; ?>js/scripts.js"></script>
+<script src="<?php echo INCLUDE_PATH; ?>js/formularios.js"></script>
 
 </body>
 </html>

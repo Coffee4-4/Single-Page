@@ -6,7 +6,7 @@
     <div class="overlay"></div> <!-- overlay -->
 
     <div class="center box-cadastro">
-        <form>
+        <form method="post">
             <h2>Cadastre seu e-mail e receba nossas novidades!</h2>
             <input type="email" name="email" required>
             <input type="submit" name="acao" value="Cadastrar!">

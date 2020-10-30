@@ -1,6 +1,5 @@
 <?php
 
-
 class Email
 {
     private $mailerphp;
@@ -14,7 +13,7 @@ class Email
         $this->mailerphp->SMTPAuth = true;                                   // Enable SMTP authentication
         $this->mailerphp->Username = $username;                     // SMTP username
         $this->mailerphp->Password = $senha;                               // SMTP password
-        $this->mailerphp->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+        $this->mailerphp->SMTPSecure = 'ssl';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
         $this->mailerphp->Port = 465;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
         $this->mailerphp->setFrom($username, $nome);
